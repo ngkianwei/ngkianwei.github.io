@@ -1,1 +1,3 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+This is the source code to Kian Wei's public portfolio website.
+
+Modified from Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
