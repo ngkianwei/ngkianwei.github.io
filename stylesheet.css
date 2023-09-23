@@ -161,3 +161,17 @@ img.behave{
   width: 100%;
   height: auto;
 }
+
+.syntax {
+  background-color: #213343;
+  border-bottom: 0.25rem solid #ff5c35;
+  border-radius: 0.1875rem;
+  border-top: 0.25rem solid #ff5c35;
+  left: 0;
+  line-height: normal;
+  padding: 0;
+  position: relative;
+  right: 0;
+  white-space: pre;
+  width: 100%;
+}
