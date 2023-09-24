@@ -161,20 +161,3 @@ img.behave{
   width: 100%;
   height: auto;
 }
-
-pre1 {
-  counter-reset: line;
-}
-pre1 span {
-  display: block;
-  line-height: 0.0rem;
-}
-pre1 span:before {
-  counter-increment: line;
-  content: counter(line);
-  display: inline-block;
-  border-right: 1px solid #ddd;
-  padding: 0 .5em;
-  margin-right: .5em;
-  color: #888
-}
