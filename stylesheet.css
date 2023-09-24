@@ -162,14 +162,14 @@ img.behave{
   height: auto;
 }
 
-pre {
+pre1 {
   counter-reset: line;
 }
-pre span {
+pre1 span {
   display: block;
   line-height: 0.0rem;
 }
-pre span:before {
+pre1 span:before {
   counter-increment: line;
   content: counter(line);
   display: inline-block;
