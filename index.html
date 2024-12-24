@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Kian Wei | About</title>
+    <title>Kian Wei | Research Projects</title>
 
     <meta name="author" content="Kian Wei">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,8 +38,10 @@
                 </p> 
                 <br>               
                 <p style="text-align:center">
-                  <a href="index.html"><u>About</u></a> &nbsp;/&nbsp;                  
-                  <a href="data/KianWeiCV(Aug 2023).pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="index.html"><u>Research Projects</u></a> &nbsp;/&nbsp;        
+                  <a href="news.html">News & Media</a> &nbsp;/&nbsp;    
+                  <a href="teaching.html">Teaching</a> &nbsp;/&nbsp;                     
+                  <!-- <a href="data/KianWeiCV(Aug 2023).pdf">CV</a> &nbsp;/&nbsp; -->
                   <a href="https://www.linkedin.com/in/kian-wei">Linkedin</a>
                 </p>
               </td>
@@ -51,15 +53,25 @@
 
 
 <!--#region research  -->
-
+<!-- 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h2>Augmented Reality</h2>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
 
       <tr onmouseout="holopocus_stop()" onmouseover="holopocus_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -80,15 +92,13 @@
           </script>
         </td>
         <td width="75%" valign="middle">
-          <a href="https://arxiv.org/abs/2308.13823">
+          <a href="https://doi.org/10.1007/978-3-031-44521-7_11">
             <span class="papertitle">HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay</span>
           </a>
           <br>
           <b>Kian Wei Ng</b>, Yujia Gao, Mohammad Shaheryar Furqan, Zachery Yeo, Joel Lau, Kee Yuan Ngiam, Eng Tat Khoo
           <br>
           <em>ASMUS</em>, 2023
-          <br>
-          <a href="data/holopocus2023_arxiv.bib">bibtex</a>
           <p></p>
           <p>We improve on existing mixed-reality ultrasound (MR-US) solutions by developing a portable 
             system that is highly accurate (via stereo triangulation on denser ArUco chessboard keypoints). 
@@ -123,123 +133,99 @@
           <b>Kian Wei Ng</b>, Mohammad Shaheryar Furqan, Yujia Gao, Kee Yuan Ngiam, Eng Tat Khoo
           <br>
           <em>Electronics</em>, 2023
-          <br>
-          <a href="data/holovein2023.bib">bibtex</a> 
           <p></p>
           <p>We utilized depth and infrared sensors on-board HoloLens 2 and developed an all-in-one mixed-reality vein finding and projection system. 
             Spatio-temporal consistency was exploited to provide semi-supervised labels for data-efficient vein segmentation model training.
           </p>
         </td>
       </tr>     
+                       
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h2>Deep Learning</h2>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+      <tr onmouseout="cobbangle_stop()" onmouseover="cobbangle_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='cobbangle_image'>
+              <img src='images/cobbangle_after.png' width="160"></div>
+            <img src='images/cobbangle_before.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function cobbangle_start() {
+              document.getElementById('cobbangle_image').style.opacity = "1";
+            }
+
+            function cobbangle_stop() {
+              document.getElementById('cobbangle_image').style.opacity = "0";
+            }
+            cobbangle_stop()
+          </script>
+        </td>
+        <td width="75%" valign="middle">
+          <a href="https://doi.org/10.1109/EMBC53108.2024.10782481">
+            <span class="papertitle">Vertebrae Segmentation with Generative Adversarial Networks for Automatic Cobb Angle Measurement</span>
+          </a>
+          <br>
+          Ying Zhen Tan, <b>Kian Wei Ng</b>, Johnathan Tan, James Hallinan, Xi Zhen Low, Andrew Makmur, Kee Yuan Ngiam, Mohammad Shaheryar Furqan
+          <br>
+          <em>EMBC</em>, 2024
+          <p></p>
+          <p>We evaluate the use of Generative Adverserial Networks (GANs) in vertebrae segmentation on X-ray images. In particular, work was done to 
+            investigate if GANs could fare better than traditional models (e.g. UNet), when images were corrupted with artifacts acquired when X-ray images
+            were further taken with phone cameras. This work paves the way as a feasibility study towards a more user-friendly, phone-based Cobb Angle
+            Estimation solution.</p>
+        </td>
+      </tr> 
+                       
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h2>Others / Reviews</h2>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <tr onmouseout="hapticsreview_stop()" onmouseover="hapticsreview_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='hapticsreview_image'>
+              <img src='images/hapticsreview_after.png' width="160"></div>
+            <img src='images/hapticsreview_before.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function hapticsreview_start() {
+              document.getElementById('hapticsreview_image').style.opacity = "1";
+            }
+
+            function hapticsreview_stop() {
+              document.getElementById('hapticsreview_image').style.opacity = "0";
+            }
+            hapticsreview_stop()
+          </script>
+        </td>
+        <td width="75%" valign="middle">
+          <a href="https://doi.org/10.1038/s41928-024-01325-7">
+            <span class="papertitle">Bridging the digital–physical divide using haptic and wearable technologies</span>
+          </a>
+          <br>
+          Jiaming Qi, Longteng Yu, Eng Tat Khoo, <b>Kian Wei Ng</b>, Yujia Gao, Alfred Wei Chieh Kow, Joo Chuan Yeo, Chwee Teck Lim
+          <br>
+          <em>Nature Electronics</em>, 2024
+          <p></p>
+          <p>The metaverse could provide an immersive environment that integrates digital and physical realities. However, this will 
+            require appropriate haptic feedback and wearable technologies. Here we explore the development of haptic and wearable 
+            technologies that can be used to bridge the digital–physical divide and build a more realistic and immersive metaverse. </p>
+        </td>
+      </tr> 
 
           </tbody></table>
-
-
-<!--#endregion -->
-
-<!--#region teaching  -->
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-  <td style="padding:20px;width:100%;vertical-align:middle">
-    <h2>Teaching</h2>
-  </td>
-</tr>
-</tbody></table>
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <img src="images/cde_logo.png" alt="3DSP" width="162" height="120" style="border-style: none">
-    </td>
-    <td width="75%" valign="middle">
-      <a href="https://nusmods.com/courses/EE3801/data-engineering-principles">
-        <span class="papertitle">EE3801 -- Data Engineering Principles</span>
-      </a>
-      <br>
-      Teaching Assistant
-      <br>
-      <em>Jun 2020 to Dec 2020</em>           
-      <br>
-      <p></p>
-      <p>Involved in setting up course materials and provided weekly consultations for a new 
-        Data Engineering module catered to engineering undergraduates. Set up and tested data 
-        processing cluster on AWS ParallelCluster, integrating Slurm and Bash scripts.</p>
-    </td>
-  </tr>                  
-
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <img src="images/soc_logo.jpg" alt="3DSP" width="162" height="120" style="border-style: none">
-    </td>
-    <td width="75%" valign="middle">
-      <a href="https://nusmods.com/courses/IT1007/introduction-to-programming-with-python-and-c">
-        <span class="papertitle">IT1007 -- Introduction to Programming with Python and C</span>
-      </a>
-      <br>
-      Teaching Assistant
-      <br>
-      <em>Aug 2018 to Dec 2018</em>           
-      <br>
-      <p></p>
-      <p>Planned and conducted weekly laboratory sessions, consultations, and grading.
-        Covered introductory programming methodology and basic applications, taught in Python and C.
-        Received above average evaluation and feedback from surveyed students regarding teaching performance.
-      </p>
-    </td>
-  </tr>     
-
-
-      </tbody></table>
-
-<!--#endregion -->
-
-<!--#region media  -->
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Media Mentions</h2>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/media1_ultrasound.png" alt="3DSP" width="180" height="120" style="border-style: none">
-      </td>
-      <td width="75%" valign="middle">
-        <a href="https://www.straitstimes.com/tech/augmented-reality-tech-to-speed-up-ultrasound-scan-results-help-with-surgical-planning">
-          <span class="papertitle">Augmented reality tech to deliver faster ultrasound scan results, help with surgical planning | The Straits Times</span>
-        </a>
-        <br>
-        <em>11 May 2023</em>           
-        <br>
-        <p></p>
-        <p>"Doctors can soon see scans in real time through an augmented reality (AR) visor 
-          that helps them to quickly diagnose injuries or get an update on the status of tumours."</p>
-      </td>
-    </tr>                  
-
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/media2_vein.png" alt="3DSP" width="180" height="120" style="border-style: none">
-      </td>
-      <td width="75%" valign="middle">
-        <a href="https://doi.org/10.3390/electronics12020292">
-          <span class="papertitle">NUHS testing AI, AR to help locate hard-to-find veins in some patients | The Straits Times</span>
-        </a>
-        <br>
-        <em>3 December 2021</em>          
-        <br>
-        <p>"The veins of some patients can be difficult to find for drawing blood as they may be small or not easily visible under the skin. 
-          But artificial intelligence (AI) and augmented reality (AR) may soon address this issue."
-        </p>
-      </td>
-    </tr>     
 
 
 <!--#endregion -->
